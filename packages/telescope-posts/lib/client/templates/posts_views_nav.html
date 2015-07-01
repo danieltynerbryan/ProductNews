@@ -1,7 +1,16 @@
 <template name="posts_views_nav">
   {{#if showNav}}
-    <div class="posts-list-views grid-module">
+    <!--
+<div class="posts-list-views grid-module">
       {{> menuComponent menuName="view" menuItems=menuItems mode="list"}}
+    </div>
+-->
+    <div class="post-lists-side">
+	    <a href="/top" class="post-lists-side-link">Trending</a>
+	    <a href="/new" class="post-lists-side-link">Recent</a>
+	    <a href="/register" class="post-lists-side-link">Apply</a>
+	    <a href="/top" class="post-lists-side-link">Search</a>
+	    <a href="/submit" class="post-lists-side-link">Post</a>
     </div>
   {{/if}}
 </template>

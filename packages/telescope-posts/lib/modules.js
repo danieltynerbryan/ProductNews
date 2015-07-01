@@ -10,10 +10,6 @@ Telescope.modules.add("postComponents", [
     order: 1
   },
   {
-    template: 'post_upvote',
-    order: 10
-  },
-  {
     template: 'post_content',
     order: 20
   },
@@ -28,6 +24,10 @@ Telescope.modules.add("postComponents", [
   {
     template: 'post_actions',
     order: 50
+  },
+  {
+    template: 'post_upvote',
+    order: 60
   }
 ]);
 

@@ -27,6 +27,13 @@ loadMoreHandler (Function)
 
 <template name="posts_list">
   <div class="posts-wrapper grid grid-module">
+	  <div class="posts-list-header">PN Launch Partners
+		  <div class="posts-list-partners-banner">
+			  <img src="/packages/telescope_getting-started/content/images/partner-pivotal.png"/>
+			  <img src="/packages/telescope_core/public/img/partner-dotco.png"/>
+			  <img src="/img/partner-invision.png"/>
+		  </div>
+	  </div>
     {{> postsListIncoming data=incoming}}
     <div class="posts list {{postsLayout}}" aria-live="polite">
       {{#each postsCursor}}

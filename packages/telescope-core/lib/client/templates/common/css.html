@@ -5,6 +5,7 @@
 
       body, textarea, input, button, input[type="submit"], input[type="button"]{
         font-family: {{getSetting 'fontFamily'}};
+        color: #2f2f2f;
       }
 
       body{
@@ -26,7 +27,107 @@
       }
 
       {{extraCSS}}
-
+      
+			.top-nav .header {
+			  height: 80px;
+			  padding: 0 10px;
+			  margin: 10px auto;
+			  max-width: 820px;
+			  background-color: #ffffff;
+			  margin-top: 0;
+			  color: #2f2f2f;
+			}
+			
+			.logo .header-module a {
+				color: #2f2f2f;
+			}
+			.header-module {
+				text-align: left !important;
+			}
+			.menu-top-level {
+				font-size: 18px;
+			}
+			.content-wrapper {
+			  max-width: 840px;
+		 	}
+		 	.post-lists-side {
+			 	position: absolute;
+			 	top: 60px;
+			 	left: 70px;
+		 	}
+		 	.post-lists-side-link {
+			 	font-size: 14px;
+			 	display: block;
+			 	margin-bottom: 16px;
+		 	}
+		 	.notifications-menu {
+			 	font-size: 11px;
+			 	color: #65C2CD;
+		 	}
+		 	.notifications-menu > .menu-top-level {
+			 	font-size: 11px;
+		 	}
+		 	#submit {
+			 	display: none;
+		 	}
+		 	.posts-list-header {
+			 	background-color: #ffffff;
+			 	padding: 30px;
+			 	color: #CECECE;
+			 	font-size: 14px;
+		 	}
+		 	.posts-list-partners-banner {
+			 	margin-top: 40px;
+			 	margin-bottom: 100px;
+		 	}
+		 	.post {
+			 	border-bottom: none;
+		 	}
+		 	.post-rank {
+			 	font-size: 18px;
+			 	color: #2f2f2f;
+		 	}
+		 	.post-domain {
+			 	color: #bebebe;
+		 	}
+		 	.post-meta {
+			 	color: #bebebe;
+			 	font-size: 12px;
+		 	}
+		 	.post-info {
+			 	border-bottom: 1px solid #bebebe;
+			 	padding-bottom: 15px;
+		 	}
+		 	.post-upvote i.icon-voted {
+			 	display: inline-block;
+			  color: #ffffff !important;
+			  background-color: #fbfbfb !important;
+			  border: none !important;
+			  height: 26px !important;
+			  width: 26px !important;
+		 	}
+		 	.posts-list .post-upvote {
+			 	order: 100;
+		 	}
+		 	.post {
+			 	padding-left: 0;
+		 	}
+		 	.post-thumbnail-image {
+			 	height: 60px;
+			 	width: 32px;
+		 	}
+		 	.post-thumbnail-link {
+			 	width: 100%;
+		 	}
+		 	.post-thumbnail {
+			 	width: 40px;
+		 	}
+		 	.post-thumbnail-empty {
+			 	width: 50px;
+		 	}
+		 	.post-rank {
+			 	display: none;
+		 	}
   </style>
   <link href='{{getSetting "fontUrl"}}' rel='stylesheet' type='text/css'>
 </template>
