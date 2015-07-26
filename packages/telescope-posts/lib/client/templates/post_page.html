@@ -9,11 +9,11 @@
   <div class="single-post grid">
     <div class="posts posts-list">
       {{> post_item}}
+      {{> comment_submit}}
     </div>
     {{#if body}}
       {{> post_body}}
     {{/if}}
-    {{> comment_submit}}
     {{> comment_list}}
   </div>
 </template>

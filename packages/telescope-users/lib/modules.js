@@ -8,7 +8,8 @@ Telescope.modules.add("profileDisplay", [
     template: 'user_posts',
     order: 2
   },
-  {
+  /*
+{
     template: 'user_upvoted_posts',
     order: 3
   },
@@ -16,6 +17,7 @@ Telescope.modules.add("profileDisplay", [
     template: 'user_downvoted_posts',
     order: 5
   },
+*/
   {
     template: 'user_comments',
     order: 5

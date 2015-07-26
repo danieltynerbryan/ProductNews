@@ -1,7 +1,14 @@
 <template name="post_submit">
 
-  <div class="grid grid-module">
-    {{> quickForm collection="Posts" id="submitPostForm" template="bootstrap3-horizontal" input-col-class="controls" type="method" meteormethod="submitPost" fields=postFields}}
+  <div class="grid grid-module" style="">
+	  <div class="row" style="padding: 30px;">
+		  <div class="col-md-6 pull-left font-22">Post</div>
+			<div class="col-md-6 pull-right light-gray">Post a link or start a discussion</div>
+			<div class="clearfix"></div>
+	  </div>
+	  <div class="row" style="padding: 30px;">
+    	{{> quickForm collection="Posts" id="submitPostForm" template="bootstrap3" input-col-class="controls" type="method" meteormethod="submitPost" fields=postFields}}
+	  </div>
   </div>
   
 </template>

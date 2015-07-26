@@ -82,13 +82,16 @@
 		 	}
 		 	.post {
 			 	border-bottom: none;
+			 	box-shadow: none !important;
 		 	}
 		 	.post-rank {
 			 	font-size: 18px;
 			 	color: #2f2f2f;
 		 	}
 		 	.post-domain {
-			 	color: #bebebe;
+			 	color: #bebebe !important;
+			 	font-size: 18px !important;
+			 	font-family: "PT Sans";
 		 	}
 		 	.post-meta {
 			 	color: #bebebe;
@@ -113,8 +116,8 @@
 			 	padding-left: 0;
 		 	}
 		 	.post-thumbnail-image {
-			 	height: 60px;
-			 	width: 32px;
+			 	max-height: 60px;
+			 	max-width: 32px;
 		 	}
 		 	.post-thumbnail-link {
 			 	width: 100%;
@@ -128,6 +131,96 @@
 		 	.post-rank {
 			 	display: none;
 		 	}
+		 	a.comments-link {
+			 	border-bottom: 1px solid #bebebe;
+		 	}
+		 	a.post-author {
+			 	border-bottom: 1px solid #bebebe;
+		 	}
+		 	.comment-form {
+			 	padding: 50px;
+		 	}
+		 	textarea.form-control {
+			 	background-color: #eeeeee;
+			 	border: none !important;
+			 	height: 40px !important;
+		 	}
+		 	input {
+			 	background-color: #eeeeee;
+			 	border: none !important;
+			 	height: 40px;
+		 	}
+		 	button {
+			 	  width: 170px;
+				  height: 50px;
+				  border-radius: 0;
+				  font-size: 14px;
+		 	}
+		 	button {
+			 	color: #ffffff;
+		 	}
+		 	.post-upvote {
+			 	-webkit-order: 100 !important;
+		 	}
+		 	.top-nav .header .logo {
+			 	left: 20px;
+		 	}
+		 	.single-post {
+			 	background-color: white;
+			 }
+			 .comment-form {
+				 box-shadow: none !important;
+			 }
+			 .comment-content {
+				 box-shadow: none !important;
+			 }
+			 .post-body {
+				 box-shadow: none !important;
+			 }
+			 .comment-username {
+				 font-size: 12px !important;
+				 color: #9a9a9a !important;
+			 }
+			 .comment-meta {
+				 border: none !important;
+				 padding-bottom: 0 !important;
+			 }
+			 .comment-text {
+				 font-size: 14px !important;
+				 color: #2f2f2f !important;
+			 }
+			 .comment-text p {
+				 font-size: 14px !important;
+				 color: #2f2f2f !important;
+			 }
+			 .red-text {
+				 color: #f6644f !important;
+				 font-size: 12px !important;
+			 }
+			 .font-18 {
+				 font-size: 18px;
+			 }
+			 .font-22 {
+				 font-size: 22px;
+			 }
+			 .light-gray {
+				 color: #bebebe;
+			 }
+			 .margin-top-40 {
+				 margin-top: 40px;
+			 }
+			 .margin-top-20 {
+				 margin-top: 20px;
+			 }
+			 .at-form {
+					max-width: 100%;
+				}
+				.grid-small {
+					max-width: 100%;
+				}
+				#at-btn {
+					margin-right: 0 !important;
+				}
   </style>
   <link href='{{getSetting "fontUrl"}}' rel='stylesheet' type='text/css'>
 </template>

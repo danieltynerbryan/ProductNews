@@ -3,6 +3,6 @@
     <div class="finish-signup-message">
       {{_ "please_fill_in_missing_information_to_finish_signing_up"}}
     </div>
-    {{> quickForm collection="Meteor.users" doc=user id="completeUserForm" template="bootstrap3-horizontal" input-col-class="controls" type="method-update" meteormethod="completeUserProfile" fields=requiredFields}}
+    {{> quickForm collection="Meteor.users" doc=user id="completeUserForm" template="bootstrap3" input-col-class="controls" type="method-update" meteormethod="completeUserProfile" fields=requiredFields}}
   </div>
 </template>

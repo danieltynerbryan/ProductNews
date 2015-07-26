@@ -5,7 +5,7 @@
         <div class="comment-deleted">This comment has been deleted.</div>
       {{else}}
       <div class="comment-content">
-        <div class="comment-actions {{#if upvoted}}upvoted{{else}}not-upvoted{{/if}} {{#if downvoted}}downvoted{{else}}not-downvoted{{/if}}">
+        <div class="comment-actions {{#if upvoted}}upvoted{{else}}not-upvoted{{/if}} {{#if downvoted}}downvoted{{else}}not-downvoted{{/if}}" style="display: none;">
           <a class="upvote" href="#">
             {{{icon "upvote"}}}
             <span>{{_ "upvote"}}</span>
@@ -16,10 +16,10 @@
           </a>
         </div>
         <div class="comment-meta">
-          <div class="user-avatar avatar-medium" aria-hidden="true" aria-live="off">{{> avatar userId=userId shape="circle"}}</div>
-          <a class="comment-username" href="{{getProfileUrl userId}}">{{authorName}}</a>
-          <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-permalink comment-time">{{timeAgo ago}},</a>
-          <span class="points">{{upvotes}}</span> <span class="unit">{{pointsUnitDisplayText}}  </span>
+          <div class="user-avatar avatar-medium" aria-hidden="true" style="display:none;" aria-live="off">{{> avatar userId=userId shape="circle"}}</div>
+          <a class="comment-username" href="{{getProfileUrl userId}}">{{authorName}}</a><span style="vertical-align:middle;color: #bebebe;font-size: 12px;">says:</span>
+          <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-permalink comment-time" style="display: none;">{{timeAgo ago}},</a>
+           <span class="unit" style="display: none;">{{pointsUnitDisplayText}}  </span>
           {{#if canEdit this}}
             | <a class="edit-link" href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a>
           {{/if}}
@@ -29,7 +29,12 @@
         </div>
         <div class="comment-main"> 
           <div class="comment-text markdown">{{{htmlBody}}}</div>
-          <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-reply">{{_ "reply"}}</a>
+          
+          <div>
+	          <span class="points red-text">{{upvotes}}</span>
+	          <a class="upvote red-text" href="#">upvote</a>
+	          <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-reply red-text">reply</a>
+          </div>
         </div>
       </div>
       {{/if}}
