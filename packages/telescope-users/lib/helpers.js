@@ -29,11 +29,23 @@ Users.getDisplayName = function (user) {
   if (typeof user === "undefined") {
     return "";
   } else {
-    return (user.telescope && user.telescope.displayName) ? user.telescope.displayName : Users.getUserName(user);
+    return (user.telescope && user.telescope.displayName) ? user.telescope.displayName + (user.telescope.title ? ', ' + user.telescope.title : '') : Users.getUserName(user);
   }
 };
+
 Users.helpers({getDisplayName: function () {return Users.getDisplayName(this);}});
 Users.getDisplayNameById = function (userId) {return Users.getDisplayName(Meteor.users.findOne(userId));};
+
+Users.getTitleName = function (user) {
+  if (typeof user === "undefined") {
+    return "";
+  } else {
+    return (user.telescope && user.telescope.title) ? user.telescope.title : Users.getUserName(user);
+  }
+};
+
+Users.helpers({getTitleName: function () {return Users.getTitleName(this);}});
+Users.getTitleNameById = function (userId) {return Users.getTitleName(Meteor.users.findOne(userId));};
 
 /**
  * Get a user's profile URL

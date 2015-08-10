@@ -10,6 +10,7 @@ Posts.getProperties = function (post) {
   var postAuthor = Meteor.users.findOne(post.userId);
   var p = {
     postAuthorName : Users.getDisplayName(postAuthor),
+    postAuthorTitle : Users.getTitleName(postAuthor),
     postTitle : Telescope.utils.cleanUp(post.title),
     profileUrl: Users.getProfileUrlBySlugOrId(post.userId),
     postUrl: Posts.getPageUrl(post),

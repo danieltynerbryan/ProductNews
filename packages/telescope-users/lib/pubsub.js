@@ -23,7 +23,7 @@ Users.pubsub.publicProperties = _.extend(Users.pubsub.publicProperties, {
   'services.twitter.profile_image_url': true,
   'services.twitter.profile_image_url_https': true,
   'services.facebook.id': true,
-  'services.twitter.screenName': true,
+  'services.twitter.screenName': true
 });
 
 /**

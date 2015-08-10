@@ -1,6 +1,5 @@
 <template name="css">
   <style>
-
       {{elementColors}}
 
       body, textarea, input, button, input[type="submit"], input[type="button"]{
@@ -146,9 +145,9 @@
 			 	height: 40px !important;
 		 	}
 		 	input {
-			 	background-color: #eeeeee;
+			 	background-color: #eeeeee !important;
 			 	border: none !important;
-			 	height: 40px;
+			 	height: 40px !important;
 		 	}
 		 	button {
 			 	  width: 170px;
@@ -220,6 +219,26 @@
 				}
 				#at-btn {
 					margin-right: 0 !important;
+				}
+				.search {margin-left: 200px !important;margin-top: 5px !important;}
+				.search.empty {background:none !important;}
+				.search-field {
+					background: none !important;
+					background-color: rgb(238, 238, 238) !important;
+					width: 200px !important;
+				}
+				.at-signup-link {
+					display: none;
+				}
+				.post-content {padding-left: 30px;}
+				.icon-upvote-count {
+					  border: 1px solid currentColor;
+					  width: 27px;
+					  height: 27px;
+					  /* padding: 5px; */
+					  text-align: center;
+					  padding-top: 2px;
+					  border-radius: 15px;
 				}
   </style>
   <link href='{{getSetting "fontUrl"}}' rel='stylesheet' type='text/css'>

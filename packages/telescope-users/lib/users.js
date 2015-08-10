@@ -172,7 +172,13 @@ Telescope.schemas.userData = new SimpleSchema({
     profile: true,
     optional: true,
     editableBy: ["member", "admin"]
-  }
+  },
+  title: {
+    type: String,
+    public: true,
+    optional: true,
+    editableBy: ["member", "admin"]
+  },
 });
 
 /**
