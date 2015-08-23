@@ -30,6 +30,17 @@ Posts.schema = new SimpleSchema({
     }
   },
   /**
+    Title
+  */
+  title: {
+    type: String,
+    optional: false,
+    editableBy: ["member", "admin"],
+    autoform: {
+	    type: "bootstrap-title"
+    }
+  },
+  /**
     URL
   */
   url: {
@@ -40,14 +51,7 @@ Posts.schema = new SimpleSchema({
       type: "bootstrap-url"
     }
   },
-  /**
-    Title
-  */
-  title: {
-    type: String,
-    optional: false,
-    editableBy: ["member", "admin"]
-  },
+  
   /**
     Post body (markdown)
   */
@@ -56,7 +60,7 @@ Posts.schema = new SimpleSchema({
     optional: true,
     editableBy: ["member", "admin"],
     autoform: {
-      rows: 5
+      type: "bootstrap-body"
     }
   },
   /**

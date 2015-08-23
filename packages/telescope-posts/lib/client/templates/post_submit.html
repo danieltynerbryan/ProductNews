@@ -8,6 +8,39 @@
 	  </div>
 	  <div class="row" style="padding: 30px;">
     	{{> quickForm collection="Posts" id="submitPostForm" template="bootstrap3" input-col-class="controls" type="method" meteormethod="submitPost" fields=postFields}}
+    	
+    	<script type="text/javascript">
+	    	$('.btn-primary').each(function() {
+			    	$(this).html("Post to PN"); // 169, 46
+		    	});
+		    
+		    $('[name="categories"]').each(function() {
+			    $(this).attr("multiple", false);
+		    	});	
+		    $( document ).ready(function() {
+			    console.log('adding the option');
+			    $('[name="categories"]').each(function() {
+			    	$(this).append('<option value="" disabled selected>Tags</option>');
+		    	});	
+		    })
+		    
+	    	$('.post-url').focus(function() {
+		    	$('.post-url').each(function() {
+			    	$(this).css("width","470px");
+		    	});
+		    	$('.post-body').each(function() {
+			    	$(this).css("width","180px").css("margin-left","550px")	;
+		    	});
+	    	})
+	    	$('.post-body').focus(function() {
+		    	$('.post-body').each(function() {
+			    	$(this).css("width","610px").css("margin-left","120px");
+		    	});
+		    	$('.post-url').each(function() {
+			    	$(this).css("width","40px");
+		    	});
+	    	})
+	    </script>
 	  </div>
   </div>
   

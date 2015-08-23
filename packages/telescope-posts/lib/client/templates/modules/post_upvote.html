@@ -1,10 +1,12 @@
 <template name="post_upvote">
   {{#if upvoted}}
-    <span class="upvote-link voted action" title="{{_ "upvoted"}}">
+    <!--
+<span class="upvote-link voted action" title="{{_ "upvoted"}}">
       
       <div class="icon-upvote-count">{{baseScore}}</div>
       <span class="sr-only">{{_ "upvoted"}}</span>
     </span>
+-->
   {{else}}
     <a class="upvote-link not-voted action" href="#" title="{{_ "upvote_"}}">
       {{{icon "upvote" "icon-circle"}}}

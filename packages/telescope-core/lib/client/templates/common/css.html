@@ -147,7 +147,7 @@
 		 	input {
 			 	background-color: #eeeeee !important;
 			 	border: none !important;
-			 	height: 40px !important;
+			 	height: 46px !important;
 		 	}
 		 	button {
 			 	  width: 170px;
@@ -220,12 +220,21 @@
 				#at-btn {
 					margin-right: 0 !important;
 				}
-				.search {margin-left: 200px !important;margin-top: 5px !important;}
+				.search {
+					position: absolute;
+					left: -157px;
+				  top: 130px;
+				}
 				.search.empty {background:none !important;}
 				.search-field {
 					background: none !important;
-					background-color: rgb(238, 238, 238) !important;
-					width: 200px !important;
+					color: #2f2f2f !important;
+					width: 150px !important;
+				}
+				.search-field:focus {
+					background: none !important;
+					color: #2f2f2f !important;
+					width: 150px !important;
 				}
 				.at-signup-link {
 					display: none;
@@ -240,6 +249,18 @@
 					  padding-top: 2px;
 					  border-radius: 15px;
 				}
-  </style>
+				
+				#submitPostForm  .control-label {
+					display: none !important;
+				}
+				.post-body {
+					margin-top: -61px;
+					margin-left: 352px;
+					border-radius: 0;
+				}
+				.categories-menu {
+					margin-left: 180px;
+				}
+				</style>
   <link href='{{getSetting "fontUrl"}}' rel='stylesheet' type='text/css'>
 </template>
