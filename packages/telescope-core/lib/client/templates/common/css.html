@@ -107,6 +107,8 @@
 			  border: none !important;
 			  height: 26px !important;
 			  width: 26px !important;
+			  margin-left: -55px;
+				margin-top: -20px;
 		 	}
 		 	.posts-list .post-upvote {
 			 	order: 100;
@@ -220,9 +222,9 @@
 				#at-btn {
 					margin-right: 0 !important;
 				}
-				.search {
-					position: absolute;
-					left: -157px;
+				div.search {
+					position: fixed;
+					left: 40px;
 				  top: 130px;
 				}
 				.search.empty {background:none !important;}
@@ -230,6 +232,7 @@
 					background: none !important;
 					color: #2f2f2f !important;
 					width: 150px !important;
+					
 				}
 				.search-field:focus {
 					background: none !important;
@@ -254,12 +257,58 @@
 					display: none !important;
 				}
 				.post-body {
-					margin-top: -61px;
+					margin-top: -76px;
 					margin-left: 352px;
 					border-radius: 0;
 				}
 				.categories-menu {
 					margin-left: 180px;
+				}
+				.at-title {
+					text-align: left;
+				}
+				#at-pwd-form  label {
+					display: none !important;
+				}
+				#at-pwd-form input {
+					width: 378px;
+				}
+				form .control-group, form .form-group, form .at-input, .accounts-dialog .control-group, .accounts-dialog .form-group, .accounts-dialog .at-input {
+				  margin-bottom: 30px;
+				}
+				.at-btn {
+				  margin-top: -96px !important;
+				  margin-left: 400px !important;
+				  height: 46px !important;
+				  width: 169px !important;
+				}
+				#at-forgotPwd {
+				   font-size: 13px;
+				  float: none !important;
+				  position: absolute;
+				  top: 230px;
+				  left: 612px;
+				}
+				.at-form {
+				  max-width: 100%;
+				  height: 400px;
+				}
+				button {
+					border-radius: 0 !important;
+				}
+				.btn {
+					border-radius: 0 !important;
+				}
+				.categories-menu {
+				  display: none !important;
+				}
+				.btn {
+					background-color: #f6644f;
+				}
+				.post-upvote .upvote-link {
+				  display: block;
+				  margin-left: -55px;
+				  margin-top: -20px;
 				}
 				</style>
   <link href='{{getSetting "fontUrl"}}' rel='stylesheet' type='text/css'>

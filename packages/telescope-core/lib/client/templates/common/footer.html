@@ -1,4 +1,10 @@
 <template name="footer">
+	<script type="text/javascript">
+		console.log("from the footer");
+		$('#at-pwd-form').append('<div class="at-title" style="margin-top:60px;"><h3>Register</h3></div>');
+		</script>
+
+
   {{#if footerCode}}
     <div class="footer grid {{footerClass}}">
       {{#markdown}}{{footerCode}}{{/markdown}}
